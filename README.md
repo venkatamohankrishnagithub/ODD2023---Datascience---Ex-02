@@ -48,6 +48,32 @@ df2=df.copy()
 df2=df2[(z<3).all(axis=1)]
 df2
 df2.boxplot()
+
+## Dataset - height_weight.csv
+
+import pandas as pd
+import numpy as np
+df1 = pd.read_csv('/content/height_weight.csv')
+df1.head(10)
+df1.drop("gender",axis=1)
+df1.boxplot()
+q1=df1.weight.quantile(0.25)
+q3=df1.weight.quantile(0.75)
+IQR=q3-q1
+lower_limit=q1-1.5*IQR
+upper_limit=q3+1.5*IQR
+lower_limit,upper_limit
+df1_new=df1[(df1.weight<lower_limit)&(df1.weight>upper_limit)]
+df1_new.boxplot()
+q1=df1.height.quantile(0.25)
+q3=df1.height.quantile(0.75)
+IQR=q3-q1
+lower_limit=q1-1.5*IQR
+upper_limit=q3+1.5*IQR
+lower_limit,upper_limit
+df1_new=df1[(df1.weight<lower_limit)&(df1.weight>upper_limit)]
+df1_new.boxplot()
+
 `````
 # OUTPUT:
 ## reading the dataset file and using Boxplot method.
