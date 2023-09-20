@@ -24,3 +24,26 @@ Check if the outliers are removed from data set using graphical methods.
 Save the final data set into the file
 
 # CODE
+## Dataset - "bhp.csv"
+import pandas as pd
+import numpy as np
+df = pd.read_csv('/content/bhp.csv')
+df.head(10)
+df.boxplot()
+df.shape
+q1=df.price_per_sqft.quantile(0.25)
+q3=df.price_per_sqft.quantile(0.75)
+IQR=q3-q1
+lower_limit=q1-1.5*IQR
+upper_limit=q3+1.5*IQR
+lower_limit,upper_limit
+df[(df.price_per_sqft<lower_limit)|(df.price_per_sqft>upper_limit)]
+df[(df.price_per_sqft<=lower_limit)&(df.price_per_sqft>=upper_limit)]
+df = df.drop(["location","size","bhk"],axis=1) 
+from scipy import stats
+z=np.abs(stats.zscore(df))
+z
+df2=df.copy()
+df2=df2[(z<3).all(axis=1)]
+df2
+df2.boxplot()
