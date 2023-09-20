@@ -24,6 +24,7 @@ Check if the outliers are removed from data set using graphical methods.
 Save the final data set into the file
 
 # CODE
+`````python
 ## Dataset - "bhp.csv"
 import pandas as pd
 import numpy as np
@@ -47,3 +48,4 @@ df2=df.copy()
 df2=df2[(z<3).all(axis=1)]
 df2
 df2.boxplot()
+`````
