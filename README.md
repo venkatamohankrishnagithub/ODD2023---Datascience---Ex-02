@@ -76,7 +76,7 @@ df1_new.boxplot()
 
 `````
 # OUTPUT:
-## reading the dataset file and using Boxplot method.
+## Reading the dataset file and using Boxplot method.
 ![Screenshot 2023-09-20 154411](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/692c0ea2-7934-4466-994b-38b5f73c84b1)
 
 ![Screenshot 2023-09-20 154643](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/a0d585ff-2191-448e-ba99-20d759254811)
@@ -103,6 +103,29 @@ df1_new.boxplot()
 ![Screenshot 2023-09-20 155425](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/37414cb3-835c-4f8f-b1f1-84618c5037c2)
 
 ![Screenshot 2023-09-20 155449](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/985190e7-464b-4180-8579-146a59caa159)
+
+## Removing outliers - Height_weight.csv
+
+![Screenshot 2023-10-11 090817](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/340fb067-cec8-4724-9979-a3a79f83c3e1)
+
+## Removing non-numerical columns.
+
+![Screenshot 2023-10-11 090837](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/c6329499-be65-4275-924f-072a4eb783d7)
+
+![Screenshot 2023-10-11 090858](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/8d20745c-e206-4cbf-b1bb-c282e95759f5)
+
+## Removing outliers of weight using IQR.
+
+![Screenshot 2023-10-11 090927](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/0f22ea03-a2b6-4bc4-9d20-aadd3551efe4)
+
+![Screenshot 2023-10-11 091006](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/d7e039e0-39ad-4402-a0c4-3afc0f008696)
+
+## Removing outliers of height using IQR.
+
+![Screenshot 2023-10-11 091027](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/d3f07aea-24d3-4dcc-a18a-442e6898db72)
+
+![Screenshot 2023-10-11 091049](https://github.com/venkatamohankrishnagithub/ODD2023---Datascience---Ex-02/assets/127727792/0a35a845-a09c-447b-9961-34699c2a6157)
+
 
 # RESULT:
 
